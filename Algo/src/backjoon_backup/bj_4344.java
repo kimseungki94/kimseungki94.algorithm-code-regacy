@@ -1,4 +1,4 @@
-package backjoon;
+package backjoon_backup;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class Main {
+public class bj_4344 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -15,37 +15,32 @@ public class Main {
 		
 		st = new StringTokenizer(br.readLine());
 		int Y = Integer.parseInt(st.nextToken());
-		int count=0;
-		boolean judge=true;
-		for(int t=0;t<Y;t++) {			
+		
+		for(int t=0 ; t<Y;t++) {
 			
 			st = new StringTokenizer(br.readLine());
 			
-			String text = st.nextToken();
-			char[] arr = new char[text.length()];
+			int T = Integer.parseInt(st.nextToken());
+			int[] arr = new int[T];
+			int sum=0;
+			double average=0;
+			int avgMan=0;
+			double count=0;
 			
-			L:for(int i=0;i<text.length();i++) {
-				
-				for(int z=0;z<text.length();z++) {
-					if(text.charAt(i)==arr[z]) {
-						judge=false;
-						break L;
-					}
+			for(int i=0 ; i<T;i++) {
+				arr[i]= Integer.parseInt(st.nextToken());
+				sum +=arr[i];
+			}
+			average=(double)sum/(double)T;
+			for(int i=0 ; i<T;i++) {
+				if(average<arr[i]) {
+					avgMan++;
 				}
-				if(i<text.length()-1) {
-					if(text.charAt(i)!=text.charAt(i+1)) {
-						arr[i]=text.charAt(i);
-					}
-				}		
 			}
 			
-			if(judge) {
-				count++;
-			}
-			judge=true;
+			count = (double)avgMan/(double)T*100;
+			bw.write(String.format("%.3f", count)+"%\n");
 		}
-		
-		bw.write(count+"\n");
 		br.close();
 		bw.flush();
 		bw.close();
