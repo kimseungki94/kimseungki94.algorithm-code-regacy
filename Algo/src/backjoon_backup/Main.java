@@ -7,29 +7,44 @@ import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
 public class Main {
-	static int count = 0;
+	static int[] arr;
+	static int N,M;
+	static boolean[] visit;
+	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+	static StringBuilder sb = new StringBuilder();
 	public static void main(String[] args) throws IOException {
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		
 		StringTokenizer st = null;
+		
 		st = new StringTokenizer(br.readLine());
-		int N = Integer.parseInt(st.nextToken());
-		int z = 0;
-		for(int i=1;i<=2994;i++) {
-			for(int j=1;j<=2994;j++) {
-				z = N-i-j;
-				if(z>2) {
-					if(z%3==0 && i%3==0 && j%3==0) {
-						count++;
-					}
-				}else {
-					break;
-				}
-				
-			}
-		}
-		bw.write(count + "\n");
+		N = Integer.parseInt(st.nextToken());
+		M = Integer.parseInt(st.nextToken());
+		arr = new int[M];
+		visit = new boolean[N];
+		dfs(0);
+		bw.write(sb+"\n");
 		bw.flush();
 		bw.close();
+	}
+
+	private static void dfs(int count) throws IOException {
+		if(count==M) {
+			for(int val : arr) {
+				//bw.write(val+" ");
+				sb.append(val).append(" ");
+			}
+			//bw.write("\n");
+			sb.append("\n");
+			return;
+		}
+		for(int i=0;i<N;i++) {
+			if(visit[i]==false) {
+				visit[i]=true;
+				arr[count]=i+1;
+				dfs(count+1);
+				visit[i]=false;
+			}
+		}
 	}
 }

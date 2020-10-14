@@ -1,3 +1,4 @@
+package backjoon_backup;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -5,7 +6,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class Main {
+public class bj_15649 {
 	static int[] arr;
 	static int N,M;
 	static boolean[] visit;
