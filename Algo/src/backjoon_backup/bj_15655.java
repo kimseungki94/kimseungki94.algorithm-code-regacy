@@ -7,7 +7,7 @@ import java.io.OutputStreamWriter;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class Main {
+public class bj_15655 {
 	static int[] arr;
 	static int N,M;
 	static boolean[] visit;
@@ -50,8 +50,8 @@ public class Main {
 			sb.append("\n");
 			return;
 		}
-		for(int i=0;i<N;i++) {
-				//visit[list[i]]=true;
+		for(int i=base;i<N;i++) {
+				visit[list[i]]=true;
 				arr[count]=list[i];
 				dfs(i+1,count+1);
 			

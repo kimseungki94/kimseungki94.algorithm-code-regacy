@@ -7,7 +7,7 @@ import java.io.OutputStreamWriter;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class Main {
+public class bj_15656 {
 	static int[] arr;
 	static int N,M;
 	static boolean[] visit;

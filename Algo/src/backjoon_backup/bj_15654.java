@@ -7,7 +7,7 @@ import java.io.OutputStreamWriter;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class Main {
+public class bj_15654 {
 	static int[] arr;
 	static int N,M;
 	static boolean[] visit;
@@ -36,25 +36,29 @@ public class Main {
 		}
 		Arrays.sort(list);
 		visit = new boolean[max+1];
-		dfs(0,0);
+		dfs(0);
 		bw.write(sb+"\n");
 		bw.flush();
 		bw.close();
 	}
 
-	private static void dfs(int base,int count) throws IOException {
+	private static void dfs(int count) throws IOException {
 		if(count==M) {
 			for(int val : arr) {
+				//bw.write(val+" ");
 				sb.append(val).append(" ");
 			}
+			//bw.write("\n");
 			sb.append("\n");
 			return;
 		}
 		for(int i=0;i<N;i++) {
-				//visit[list[i]]=true;
+			if(visit[list[i]]==false) {
+				visit[list[i]]=true;
 				arr[count]=list[i];
-				dfs(i+1,count+1);
-			
+				dfs(count+1);
+				visit[list[i]]=false;
+			}
 			
 		}
 		
