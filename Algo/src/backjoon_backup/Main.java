@@ -5,58 +5,68 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.Arrays;
+import java.util.Iterator;
+import java.util.LinkedHashSet;
 import java.util.StringTokenizer;
 
 public class Main {
+	static int N, M;
 	static int[] arr;
-	static int N,M;
-	static boolean[] visit;
+	static int[] result;
 	static int[] list;
+	static boolean[] visit;
+	static int max = 0;
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 	static StringBuilder sb = new StringBuilder();
-	static int max=0;
+	static StringTokenizer st;
+	static LinkedHashSet<String> hash = new LinkedHashSet<String>();
+	
 	public static void main(String[] args) throws IOException {
-		
-		StringTokenizer st = null;
-		
 		st = new StringTokenizer(br.readLine());
 		N = Integer.parseInt(st.nextToken());
 		M = Integer.parseInt(st.nextToken());
-		arr = new int[M];
-		
-		list = new int[N];
+		arr = new int[N];
+		list = new int[M];
+		result = new int[M];
+
 		st = new StringTokenizer(br.readLine());
-		
-		for(int i=0;i<list.length;i++) {
-			list[i]=Integer.parseInt(st.nextToken());
-			if(max<list[i]) {
-				max=list[i];
+
+		for (int i = 0; i < N; i++) {
+			arr[i] = Integer.parseInt(st.nextToken());
+			if (max < arr[i]) {
+				max = arr[i];
 			}
 		}
-		Arrays.sort(list);
-		visit = new boolean[max+1];
-		dfs(0,0);
-		bw.write(sb+"\n");
+		visit = new boolean[N];
+		Arrays.sort(arr);
+		dfs(0,0);	
+		Iterator<String> iter = hash.iterator();
+		while(iter.hasNext()) {
+			bw.write(iter.next()+"\n");
+		}
 		bw.flush();
 		bw.close();
 	}
 
-	private static void dfs(int base,int count) throws IOException {
-		if(count==M) {
-			for(int val : arr) {
-				sb.append(val).append(" ");
+	private static void dfs(int base,int count) {
+		if (count == M) {
+			for (int i = 0; i < list.length; i++) {
+				sb.append(list[i] + " ");
 			}
-			sb.append("\n");
+			hash.add(sb.toString());
+			sb.delete(0, sb.length());
 			return;
+
 		}
-		for(int i=0;i<N;i++) {
-				//visit[list[i]]=true;
-				arr[count]=list[i];
-				dfs(i+1,count+1);
-			
-			
+		for (int i = base; i < N; i++) {
+			//if (visit[i] == false) {
+			//	visit[i] = true;
+				list[count] = arr[i];
+				dfs(i,count + 1);
+				//visit[i] = false;
+			//}
 		}
-		
+
 	}
 }

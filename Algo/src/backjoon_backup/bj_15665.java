@@ -1,4 +1,4 @@
-
+package backjoon_backup;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -11,7 +11,7 @@ import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.StringTokenizer;
 
-public class Main {
+public class bj_15665 {
 	static int N, M;
 	static int[] arr;
 	static int[] result;
@@ -22,7 +22,7 @@ public class Main {
 	static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 	static StringBuilder sb = new StringBuilder();
 	static StringTokenizer st;
-	static HashMap<String,String> hash = new HashMap<String,String>();
+	static HashMap<String,Integer> hash = new HashMap<>();
 	
 	public static void main(String[] args) throws IOException {
 		st = new StringTokenizer(br.readLine());
@@ -43,9 +43,9 @@ public class Main {
 		visit = new boolean[N];
 		Arrays.sort(arr);
 		dfs(0);
-		for(int i=0;i<hash.size();i++) {
-			System.out.println(hash.get(i));
-		}
+
+		hash.forEach((key, value)
+			    -> System.out.println(key));
 //		Iterator<String> iter = hash.iterator();
 //		while(iter.hasNext()) {
 //			bw.write(iter.next()+"\n");
@@ -61,7 +61,7 @@ public class Main {
 			}
 			System.out.println(sb);
 			System.out.println("----");
-			hash.put(sb.toString(), sb.toString());
+			hash.put(sb.toString(), 1);
 			System.out.println(hash);
 			sb.delete(0, sb.length());
 			return;

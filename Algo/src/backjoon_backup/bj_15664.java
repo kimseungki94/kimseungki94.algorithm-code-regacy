@@ -1,5 +1,4 @@
-
-
+package backjoon_backup;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -11,7 +10,7 @@ import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.StringTokenizer;
 
-public class Main {
+public class bj_15664 {
 	static int N, M;
 	static int[] arr;
 	static int[] result;
@@ -22,8 +21,9 @@ public class Main {
 	static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 	static StringBuilder sb = new StringBuilder();
 	static StringTokenizer st;
-	static HashMap<String,String> hash = new HashMap<String,String>();
-	
+	static LinkedHashSet<String> hash = new LinkedHashSet<String>();
+	static HashMap<String,Integer> ha = new HashMap<>();
+
 	public static void main(String[] args) throws IOException {
 		st = new StringTokenizer(br.readLine());
 		N = Integer.parseInt(st.nextToken());
@@ -31,6 +31,7 @@ public class Main {
 		arr = new int[N];
 		list = new int[M];
 		result = new int[M];
+		HashMap<String,Integer> temp = new HashMap<>();
 
 		st = new StringTokenizer(br.readLine());
 
@@ -42,38 +43,32 @@ public class Main {
 		}
 		visit = new boolean[N];
 		Arrays.sort(arr);
-		dfs(0);
-		for(int i=0;i<hash.size();i++) {
-			System.out.println(hash.get(i));
+		dfs(0,0);	
+		Iterator<String> iter = hash.iterator();
+		while(iter.hasNext()) {
+			bw.write(iter.next()+"\n");
 		}
-//		Iterator<String> iter = hash.iterator();
-//		while(iter.hasNext()) {
-//			bw.write(iter.next()+"\n");
-//		}
 		bw.flush();
 		bw.close();
 	}
 
-	private static void dfs(int count) {
+	private static void dfs(int base,int count) {
 		if (count == M) {
 			for (int i = 0; i < list.length; i++) {
 				sb.append(list[i] + " ");
 			}
-			System.out.println(sb);
-			System.out.println("----");
-			hash.put(sb.toString(), sb.toString());
-			System.out.println(hash);
+			hash.add(sb.toString());
 			sb.delete(0, sb.length());
 			return;
 
 		}
-		for (int i = 0; i < N; i++) {
-			//if (visit[i] == false) {
-				//visit[i] = true;
+		for (int i = base; i < N; i++) {
+			if (visit[i] == false) {
+				visit[i] = true;
 				list[count] = arr[i];
-				dfs(count + 1);
-				//visit[i] = false;
-			//}
+				dfs(i+1,count + 1);
+				visit[i] = false;
+			}
 		}
 
 	}
