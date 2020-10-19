@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.Stack;
 import java.util.StringTokenizer;
 
-class Main {
+class bj_10828 {
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 	static StringTokenizer st = null;
