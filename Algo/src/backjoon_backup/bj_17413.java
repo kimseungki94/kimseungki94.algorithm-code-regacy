@@ -9,7 +9,7 @@ import java.util.Queue;
 import java.util.Stack;
 import java.util.StringTokenizer;
 
-class Main {
+class bj_17413 {
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 	static StringTokenizer st = null;
@@ -21,25 +21,35 @@ class Main {
 		String word="";
 		word=st.nextToken();
 		char[] arr = word.toCharArray();
-		int bar=0;
-		int result=0;
-		for(int i=0;i<arr.length;i++) {
-			if(arr[i]=='(') {
-				stack.push('(');
-				bar++;
+		int i=0;
+		while(i<arr.length) {
+			
+			if(arr[i]=='<') {
+				while(stack.size()!=0) {
+					sb.append(stack.pop());
+				}
+				while(arr[i]!='>') {
+					sb.append(arr[i]);
+					i++;
+				}
+				sb.append(arr[i]);
+			}else if(arr[i]==' ') {
+				while(stack.size()!=0) {
+					sb.append(stack.pop());
+				}
+				sb.append(" ");
 			}
-			if(i>0 && arr[i]==')' && arr[i-1]==')') {
-				bar--;
-				result=result+1;
-				stack.pop();
-			}else if(arr[i]==')' && stack.peek()=='(') {
-				bar--;
-				stack.pop();
-				result+=bar;
+			else {
+				stack.push(arr[i]);
+			}			
+			i++;
+		}
+		if(!stack.isEmpty()) {
+			while(stack.size()!=0) {
+				sb.append(stack.pop());
 			}
 		}
-		result =result+stack.size();
-		bw.write(result+"\n");
+		bw.write(sb+"\n");
 		bw.flush();
 		bw.close();
 	}
