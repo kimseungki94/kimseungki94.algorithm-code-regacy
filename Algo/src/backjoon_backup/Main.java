@@ -4,8 +4,6 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Stack;
 import java.util.StringTokenizer;
 
@@ -14,32 +12,35 @@ class Main {
 	static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 	static StringTokenizer st = null;
 	static StringBuilder sb = new StringBuilder();
-
+	static int N=0;
+	static int[] arr;
+	static int[] answer;
 	public static void main(String[] args) throws IOException {
-		Stack<Character> stack = new Stack<>();
-		st = new StringTokenizer(br.readLine(),"");
-		String word="";
-		word=st.nextToken();
-		char[] arr = word.toCharArray();
-		int bar=0;
-		int result=0;
+		st = new StringTokenizer(br.readLine()," ");
+		N = Integer.parseInt(st.nextToken());
+		Stack<Integer> stack = new Stack<>();
+		arr = new int[N];
+		answer = new int[N];
+		st = new StringTokenizer(br.readLine()," ");
 		for(int i=0;i<arr.length;i++) {
-			if(arr[i]=='(') {
-				stack.push('(');
-				bar++;
-			}
-			if(i>0 && arr[i]==')' && arr[i-1]==')') {
-				bar--;
-				result=result+1;
-				stack.pop();
-			}else if(arr[i]==')' && stack.peek()=='(') {
-				bar--;
-				stack.pop();
-				result+=bar;
-			}
+			arr[i]=Integer.parseInt(st.nextToken());
 		}
-		result =result+stack.size();
-		bw.write(result+"\n");
+		stack.push(0);
+		for(int i=1;i<arr.length;i++) {
+			while(!stack.isEmpty() && arr[stack.peek()]<arr[i]) {
+				answer[stack.peek()]=arr[i];
+				stack.pop();
+			}
+			stack.push(i);
+		}
+		while(!stack.isEmpty()) {
+			answer[stack.peek()]=-1;
+			stack.pop();
+		}
+		for(int i=0;i<answer.length;i++) {
+			sb.append(answer[i]+" ");
+		}
+		bw.write(sb+"\n");
 		bw.flush();
 		bw.close();
 	}
