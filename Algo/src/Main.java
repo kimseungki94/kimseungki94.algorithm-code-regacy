@@ -15,43 +15,31 @@ class Main {
 	static StringBuilder sb = new StringBuilder();
 	static int N=0;
 	static int[] arr;
-	static int[] answer;
+	static boolean[] visit;
 	public static void main(String[] args) throws IOException {
+		st = new StringTokenizer(br.readLine());
+		int M = Integer.parseInt(st.nextToken());
+		int N = Integer.parseInt(st.nextToken());
+		int max=N;
+
+		visit = new boolean[max+1];
+		visit[0]=true;
+		visit[1]=true;
 		
-		Stack<Integer> stack = new Stack<>();
-		st = new StringTokenizer(br.readLine());
-		N = Integer.parseInt(st.nextToken());
-		arr = new int[N];
-		answer = new int[N];
-		st = new StringTokenizer(br.readLine());
-		for(int i=0;i<N;i++) {
-			arr[i]=Integer.parseInt(st.nextToken());
-		}
-		HashMap<Integer, Integer> map = new HashMap<>();
-		for(int i=0;i<N;i++) {
-			if(!map.containsKey(arr[i])) {
-				map.put(arr[i], 1);
-			}else {
-				map.put(arr[i], map.get(arr[i])+1);
-			}			
-		}
-		stack.push(0);
-		for(int i=1;i<N;i++) {
-			while(!stack.isEmpty() && map.get(arr[stack.peek()])<map.get(arr[i])) {
-				answer[stack.peek()]=arr[i];
-				stack.pop();
+		for(int i=2;i*i<=max;i++) {
+			for(int j=i*i;j<=max;j+=i) {
+				visit[j]=true;
 			}
-			stack.push(i);
 		}
-		while(!stack.isEmpty()) {
-			answer[stack.peek()]=-1;
-			stack.pop();
-		}
-		for(int i=0;i<answer.length;i++) {
-			sb.append(answer[i]+" ");
+		for(int i=M;i<=N;i++) {
+			if(visit[i]==false) {
+				sb.append(i+"\n");
+			}
 		}
 		bw.write(sb+"\n");
 		bw.flush();
 		bw.close();
 	}
+
+	
 }
