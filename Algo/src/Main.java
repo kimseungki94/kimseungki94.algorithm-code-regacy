@@ -13,47 +13,33 @@ class Main {
 	static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 	static StringTokenizer st = null;
 	static StringBuilder sb = new StringBuilder();
-	static long N=0;
-	static long M=0;
 	static int[] arr;
-	static boolean[] visit;
 	public static void main(String[] args) throws IOException {
 		st = new StringTokenizer(br.readLine());
-		N = Long.parseLong(st.nextToken());
-		M = Long.parseLong(st.nextToken());
-		
-		if(N-M>0) {
-			
-		}else {
-			
-		}
-		int value2=0;
-		int value5=0;
-		long temp=0;
-		for(long i=N;i>=M;i--) {
-			temp=i;
-			while(temp%2==0) {
-				value2++;
-				temp=temp/2;
+		int T = Integer.parseInt(st.nextToken());
+		long profit=0;
+		int max=0;
+		for(int t=0;t<T;t++) {
+			st = new StringTokenizer(br.readLine());
+			int N = Integer.parseInt(st.nextToken());
+			arr = new int[N];
+			st = new StringTokenizer(br.readLine());
+			for(int i=0;i<N;i++) {
+				arr[i]=Integer.parseInt(st.nextToken());
 			}
-			while(temp%5==0) {
-				value5++;
-				temp=temp/5;
+			profit = 0;
+			max=0;
+			for(int i=arr.length-1;i>=0;i--) {
+				if(arr[i]>max) {
+					max=arr[i];
+				}else {
+					profit+=(max-arr[i]);
+				}
 			}
+			sb.append(profit+"\n");
 		}
-		if(value2>0 && value5>0) {
-			if(value2<value5) {
-				sb.append(value2+"\n");
-			}else {
-				sb.append(value5+"\n");
-			}
-		}else {
-			sb.append(0+"\n");
-		}
-		
 		bw.write(sb+"\n");
 		bw.flush();
 		bw.close();
 	}
-	
 }
