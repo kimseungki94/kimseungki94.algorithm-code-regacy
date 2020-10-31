@@ -14,32 +14,49 @@ class Main {
 	static StringTokenizer st = null;
 	static StringBuilder sb = new StringBuilder();
 	static int[] arr;
+	static int val5=0;
+	static int val2=0;
 	public static void main(String[] args) throws IOException {
 		st = new StringTokenizer(br.readLine());
-		int T = Integer.parseInt(st.nextToken());
-		long profit=0;
-		int max=0;
-		for(int t=0;t<T;t++) {
-			st = new StringTokenizer(br.readLine());
-			int N = Integer.parseInt(st.nextToken());
-			arr = new int[N];
-			st = new StringTokenizer(br.readLine());
-			for(int i=0;i<N;i++) {
-				arr[i]=Integer.parseInt(st.nextToken());
-			}
-			profit = 0;
-			max=0;
-			for(int i=arr.length-1;i>=0;i--) {
-				if(arr[i]>max) {
-					max=arr[i];
-				}else {
-					profit+=(max-arr[i]);
-				}
-			}
-			sb.append(profit+"\n");
+		long N = Integer.parseInt(st.nextToken());
+		long M = Integer.parseInt(st.nextToken());
+		
+		plusfactorial(N);
+		minusfactorial(N-M);
+		minusfactorial(M);
+		if(val5>val2) {
+			sb.append(val2+"\n");
+		}else {
+			sb.append(val5+"\n");
 		}
 		bw.write(sb+"\n");
 		bw.flush();
 		bw.close();
 	}
+	private static void minusfactorial(long n) {
+		long judge5=5;
+		long judge2=2;
+		while(n>=judge5) {
+			val5-=n/judge5;
+			judge5=judge5*5;
+		}
+		while(n>=judge2) {
+			val2-=n/judge2;
+			judge2=judge2*2;
+		}
+		
+	}
+	private static void plusfactorial(long n) {
+		long judge5=5;
+		long judge2=2;
+		while(n>=judge5) {
+			val5+=n/judge5;
+			judge5=judge5*5;
+		}
+		while(n>=judge2) {
+			val2+=n/judge2;
+			judge2=judge2*2;
+		}
+	}
+	
 }
