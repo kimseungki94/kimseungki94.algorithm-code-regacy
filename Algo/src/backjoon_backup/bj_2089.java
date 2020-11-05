@@ -6,42 +6,37 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-class Main {
+class bj_2089 {
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 	static StringTokenizer st = null;
 	static StringBuilder sb = new StringBuilder();
-	static String[] arr;
-	static boolean[] visit = new boolean[1000001];
+	
 	public static void main(String[] args) throws IOException {
 		st = new StringTokenizer(br.readLine());
-		
 		int N = Integer.parseInt(st.nextToken());
-		int M = Integer.parseInt(st.nextToken());
-		if(N==0) {
-			sb.append(0);
-		}else {
-			while(true) {
-				if(Math.abs(N%M)>=10) {
-					sb.append((char)(65+Math.abs(N%M)-10));
-				}else {
-					sb.append(Math.abs(N%M));
-				}
-				N=N/M;
-				if(N==0) {
-					break;
-				}
-			}
-			if(N!=0) {
-				sb.append(N);
-			}
-			
-			
-		}
+		dfs(N);
 		sb.reverse();
 		bw.write(sb+"\n");
 		bw.flush();
 		bw.close();
+	}
+
+	private static void dfs(int n) {
+		
+		if(n==0) {
+			sb.append(0);
+			return;
+		}else if(n==1) {
+			sb.append(n);
+			return;
+		}
+		else{
+			sb.append(Math.abs(n % -2));
+			n = (int) Math.ceil(((double)n/-2));
+			
+			dfs(n);
+		}
 	}
 
 }

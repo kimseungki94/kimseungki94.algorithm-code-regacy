@@ -6,42 +6,50 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-class Main {
+class bj_17087 {
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 	static StringTokenizer st = null;
 	static StringBuilder sb = new StringBuilder();
-	static String[] arr;
-	static boolean[] visit = new boolean[1000001];
+	static int[] arr;
+
 	public static void main(String[] args) throws IOException {
 		st = new StringTokenizer(br.readLine());
-		
 		int N = Integer.parseInt(st.nextToken());
-		int M = Integer.parseInt(st.nextToken());
-		if(N==0) {
-			sb.append(0);
-		}else {
-			while(true) {
-				if(Math.abs(N%M)>=10) {
-					sb.append((char)(65+Math.abs(N%M)-10));
-				}else {
-					sb.append(Math.abs(N%M));
-				}
-				N=N/M;
-				if(N==0) {
-					break;
-				}
+		long S = Integer.parseInt(st.nextToken());
+		long[] brother = new long[N];
+		st = new StringTokenizer(br.readLine());
+		long data = 0;
+		long result = 0;
+		for (int i = 0; i < N; i++) {
+			data = Long.parseLong(st.nextToken());
+			if (data < S) {
+				data = S - data;
+			} else {
+				data = data - S;
 			}
-			if(N!=0) {
-				sb.append(N);
-			}
-			
-			
+			brother[i] = data;
 		}
-		sb.reverse();
-		bw.write(sb+"\n");
+
+		result = brother[0];
+		if (N > 1) {
+			for (int i = 1; i < N; i++) {
+				result = gcd(result, brother[i]);
+			}
+		}
+		sb.append(result + "\n");
+		bw.write(sb + "\n");
 		bw.flush();
 		bw.close();
+	}
+
+	private static long gcd(long a, long b) {
+
+		if (b == 0) {
+			return a;
+		} else {
+			return gcd(b, a % b);
+		}
 	}
 
 }
