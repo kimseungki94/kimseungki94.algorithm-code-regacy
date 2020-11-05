@@ -7,7 +7,7 @@ import java.io.OutputStreamWriter;
 import java.util.Stack;
 import java.util.StringTokenizer;
 
-class Main {
+class bj_1463_bottomUp {
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 	static StringTokenizer st = null;

@@ -7,7 +7,7 @@ import java.io.OutputStreamWriter;
 import java.util.Stack;
 import java.util.StringTokenizer;
 
-class Main {
+class bj_11653 {
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 	static StringTokenizer st = null;
@@ -17,21 +17,25 @@ class Main {
 	public static void main(String[] args) throws IOException {
 		st = new StringTokenizer(br.readLine());
 		int N = Integer.parseInt(st.nextToken());
-		arr = new int[N+1];
-		arr[0]=0;
-		arr[1]=0;
-
-		for(int i=2;i<=N;i++) {
-			arr[i]=arr[i-1]+1;
-			if(i%2==0 && arr[i/2]+1<arr[i]) {
-				arr[i]=arr[i/2]+1;
-			}
-			if(i%3==0 && arr[i/3]+1<arr[i]) {
-				arr[i]=arr[i/3]+1;
+		int index=2;
+		if(N==1) {
+		}else {
+			while(true) {
+				if(N==1) {
+					break;
+				}else {
+					if(N%index==0) {
+						N=N/index;
+						sb.append(index+"\n");
+					}else {
+						index++;
+					}
+				}
 			}
 		}
-		bw.write(arr[N]+"\n");
-        bw.flush();
+		
+        bw.write(sb+"\n");
+		bw.flush();
 		bw.close();
 	}
 

@@ -3,6 +3,7 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.Stack;
 import java.util.StringTokenizer;
 
 class Main {
@@ -14,26 +15,23 @@ class Main {
 	static boolean[] visit = new boolean[1000001];
 	public static void main(String[] args) throws IOException {
 		st = new StringTokenizer(br.readLine());
-		int before=Integer.parseInt(st.nextToken());
-		int startbefore=before;
-		int after = Integer.parseInt(st.nextToken());
-		
-		int count=0;
-		st = new StringTokenizer(br.readLine());
-		arr = new int[Integer.parseInt(st.nextToken())];
-		
-		st = new StringTokenizer(br.readLine());
-		for(int i=0;i<arr.length;i++) {
-			if(arr.length-i-1==0) {
-				count+=Integer.parseInt(st.nextToken());
-			}else {
-				count+=(arr.length-i-1)*Integer.parseInt(st.nextToken())*before;
-				before=before*startbefore;
+		int N = Integer.parseInt(st.nextToken());
+		arr = new int[N+1];
+		arr[0]=0;
+		arr[1]=0;
+
+		for(int i=2;i<=N;i++) {
+			arr[i]=arr[i-1]+1;
+			if(i%2==0 && arr[i/2]+1<arr[i]) {
+				arr[i]=arr[i/2]+1;
 			}
+			if(i%3==0 && arr[i/3]+1<arr[i]) {
+				arr[i]=arr[i/3]+1;
+			}
+
 		}
-		System.out.println(count);
-		
-		bw.flush();
+		bw.write(arr[N]+"\n");
+        bw.flush();
 		bw.close();
 	}
 
