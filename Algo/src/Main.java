@@ -3,6 +3,7 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.Stack;
 import java.util.StringTokenizer;
 
 class Main {
@@ -10,31 +11,46 @@ class Main {
 	static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 	static StringBuilder sb = new StringBuilder();
 	static int N;
-	static long[][] arr;
+	static long[] arr;
+	static long[] visit;
+	static String[] text;
 	static StringTokenizer st = null;
 	public static void main(String[] args) throws IOException {
+		Stack<Long> stack = new Stack<>();
 		st = new StringTokenizer(br.readLine());
 		N = Integer.parseInt(st.nextToken());
-		arr = new long[N+1][10];
-			for(int i=1;i<=9;i++) {
-				arr[1][i]=1;
-			}
-			for(int i=2;i<=N;i++) {
-				for(int j=0;j<=9;j++) {
-					if(j==0) {
-						arr[i][j]=(arr[i-1][j+1])%1000000000;
-					}else if(j==9) {
-						arr[i][j]=(arr[i-1][j-1])%1000000000;
-					}else {
-						arr[i][j]=(arr[i-1][j-1]+arr[i-1][j+1])%1000000000;
-					}
+		arr = new long[N];
+		visit = new long[N];
+		text = new String[N];
+		st = new StringTokenizer(br.readLine());
+
+		for(int i=0;i<N;i++) {
+			arr[i]=Integer.parseInt(st.nextToken());
+		}
+		for(int i=0;i<N;i++) {
+			visit[i]=1;
+			for(int j=0;j<i;j++) {
+				if(arr[i]>arr[j] && visit[i]<visit[j]+1) {
+					visit[i]=visit[j]+1;
 				}
 			}
-		long value=0;
-		for(int i=0;i<10;i++) {
-			value+=arr[N][i];
 		}
-		bw.write(value%1000000000+"\n");
+		long max=0;
+		for(int i=0;i<N;i++) {
+			max=Math.max(max,visit[i]);
+		}
+		
+		sb.append(max+"\n");
+		for(int i=N-1;i>=0;i--) {
+			if(max==visit[i]) {
+				stack.push(arr[i]);
+				max--;
+			}
+		}
+		while(!stack.isEmpty()) {
+			sb.append(stack.pop()+" ");
+		}
+		bw.write(sb+"\n");
 		bw.flush();
 		bw.close();
 	}
