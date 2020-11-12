@@ -11,33 +11,24 @@ class Main {
 	static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 	static StringBuilder sb = new StringBuilder();
 	static int N;
-	static int[] arr;
-	static int[] dp;
+	static long[] arr;
 	static StringTokenizer st = null;
 	public static void main(String[] args) throws IOException {
 		st = new StringTokenizer(br.readLine());
 		N = Integer.parseInt(st.nextToken());
-		arr = new int[N];
-		dp = new int[N];
-		
-		st = new StringTokenizer(br.readLine());
+		arr = new long[1000001];
+		arr[0]=0;
+		arr[1]=1;
+		arr[2]=2;
+		arr[3]=4;
+		for(int i=4;i<=1000000;i++) {
+			arr[i]=(arr[i-3]+arr[i-2]+arr[i-1])%1000000009;
+		}
 		for(int i=0;i<N;i++) {
-			arr[i]=Integer.parseInt(st.nextToken());
+			st = new StringTokenizer(br.readLine());
+			sb.append(arr[Integer.parseInt(st.nextToken())]+"\n");
 		}
-		dp[0]=1;
-		for(int i=1;i<N;i++) {
-			dp[i]=1;
-			for(int j=0;j<i;j++) {
-				if(arr[i]<arr[j] && dp[j]+1>dp[i]) {
-					dp[i]=dp[j]+1;
-				}
-			}
-		}
-		int max=0;
-		for(int i=0;i<N;i++) {
-			max=Math.max(dp[i], max);
-		}
-		bw.write(max+"\n");
+		bw.write(sb+"\n");
 		bw.flush();
 		bw.close();
 	}
