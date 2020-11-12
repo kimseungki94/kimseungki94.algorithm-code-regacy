@@ -11,45 +11,33 @@ class Main {
 	static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 	static StringBuilder sb = new StringBuilder();
 	static int N;
-	static long[] arr;
-	static long[] visit;
-	static String[] text;
+	static int[] arr;
+	static int[] dp;
 	static StringTokenizer st = null;
 	public static void main(String[] args) throws IOException {
 		st = new StringTokenizer(br.readLine());
 		N = Integer.parseInt(st.nextToken());
-		arr = new long[N];
-		visit = new long[N];
-		text = new String[N];
+		arr = new int[N];
+		dp = new int[N];
+		
 		st = new StringTokenizer(br.readLine());
-
 		for(int i=0;i<N;i++) {
 			arr[i]=Integer.parseInt(st.nextToken());
 		}
-		int find=0;
-		for(int i=0;i<N;i++) {
-			find=0;
-			visit[i]=1;
-			text[i]=String.valueOf(arr[i]);
+		dp[0]=1;
+		for(int i=1;i<N;i++) {
+			dp[i]=1;
 			for(int j=0;j<i;j++) {
-				if(arr[i]>arr[j] && visit[i]<visit[j]+1) {
-					visit[i]=visit[j]+1;
-					text[i]="";
-					text[i]=text[j]+" "+arr[i];
-					find=j;
+				if(arr[i]<arr[j] && dp[j]+1>dp[i]) {
+					dp[i]=dp[j]+1;
 				}
 			}
 		}
-		long max=0;
-		int result_index=0;
+		int max=0;
 		for(int i=0;i<N;i++) {
-			if(visit[i]>max) {
-				max=visit[i];
-				result_index=i;
-			}
+			max=Math.max(dp[i], max);
 		}
 		bw.write(max+"\n");
-		bw.write(text[result_index]+"\n");
 		bw.flush();
 		bw.close();
 	}
