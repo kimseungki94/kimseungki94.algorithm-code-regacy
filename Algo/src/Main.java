@@ -13,7 +13,7 @@ class Main {
 	static long[] arr;
 	static StringTokenizer st = null;
 	public static void main(String[] args) throws IOException {
-		System.out.println("test");
+		System.out.println("test2");
 		st = new StringTokenizer(br.readLine());
 		N = Integer.parseInt(st.nextToken());
 		arr = new long[1000001];
