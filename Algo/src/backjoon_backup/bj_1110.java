@@ -16,7 +16,7 @@ public class bj_1110 {
 		int N = Integer.parseInt(st.nextToken());
 		int temp = 0;
 		int cycle = 0;
-		
+
 		if (N < 10) {
 			temp = N * 10 + N;
 		} else {
@@ -25,6 +25,7 @@ public class bj_1110 {
 			temp = i+j;
 			temp = j*10+temp%10;
 		}
+
 		cycle=1;
 		if(temp==N) {
 		}else {
