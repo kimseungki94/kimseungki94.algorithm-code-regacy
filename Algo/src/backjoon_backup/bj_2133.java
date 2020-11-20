@@ -3,39 +3,36 @@ package backjoon_backup;
 import java.io.*;
 import java.util.StringTokenizer;
 
-class bj_11055 {
+class bj_2133 {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
     static StringBuilder sb = new StringBuilder();
     static int N;
     static int[] arr;
-    static int[] dp;
+    static long[] dp;
     static StringTokenizer st = null;
 
     public static void main(String[] args) throws IOException {
 
         st = new StringTokenizer(br.readLine());
         N = Integer.parseInt(st.nextToken());
-        arr = new int[N];
-        dp = new int[N];
-        st = new StringTokenizer(br.readLine());
-        for(int i=0;i<N;i++){
-            arr[i]=Integer.parseInt(st.nextToken());
-            dp[i]=arr[i];
-        }
-        for(int i=0;i<N;i++){
-            for(int j=0;j<=i;j++){
-                if(arr[i]>arr[j]){
-                    dp[i]=Math.max(dp[j]+arr[i],dp[i]);
+        dp=new long[N+1];
+        if(N==2){
+            bw.write(3+"\n");
+        }else if(N>=4 && N%2==0){
+            dp[0]=1;
+            dp[2]=3;
+            for(int i=4;i<=N;i=i+2){
+                dp[i]+=dp[2]*dp[i-2];
+                for(int j=4;j<=i;j+=2){
+                    dp[i]+=2*dp[i-j];
                 }
             }
-        }
-        int max=0;
-        for(int i=0;i<N;i++){
-            max=Math.max(dp[i],max);
+            bw.write(dp[N]+"\n");
+        }else{
+            bw.write(0+"\n");
         }
 
-        bw.write(max + "\n");
         bw.flush();
         bw.close();
     }
