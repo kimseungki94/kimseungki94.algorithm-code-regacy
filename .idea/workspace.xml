@@ -21,11 +21,116 @@
   <component name="ChangeListManager">
     <list default="true" id="47362f79-79ba-4276-8525-e28e64d8cbcb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Algo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Algo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.recommenders/caches/identified-project-coordinates.json" beforeDir="false" afterPath="$PROJECT_DIR$/.recommenders/caches/identified-project-coordinates.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.recommenders/caches/manual-mappings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.recommenders/caches/manual-mappings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/.project" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/Algo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/Algo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_1003.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_1003.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_10799.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_10799.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_10817.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_10817.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_10820.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_10820.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_10824.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_10824.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_10828.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_10828.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_10845.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_10845.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_10866.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_10866.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_10872.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_10872.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_10952.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_10952.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_11005.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_11005.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_11052.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_11052.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_11053.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_11053.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_11054.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_11054.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_11055.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_11055.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_11057.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_11057.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_1110.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_1110.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_11501.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_11501.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_11576.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_11576.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_1158.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_1158.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_11653.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_11653.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_11655.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_11655.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_11656.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_11656.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_11722.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_11722.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_1212.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_1212.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_1316.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_1316.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_13398.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_13398.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_1373.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_1373.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_14002.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_14002.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_1463_bottomUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_1463_bottomUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_1463_topDown.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_1463_topDown.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_15649.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_15649.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_15650.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_15650.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_15651.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_15651.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_15654.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_15654.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_15655.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_15655.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_15656.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_15656.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_15663.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_15663.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_15664.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_15664.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_15665.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_15665.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_15666.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_15666.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_15988.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_15988.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_15990.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_15990.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_16194.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_16194.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_16561.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_16561.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_1676.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_1676.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_1699.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_1699.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_17087.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_17087.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_17103.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_17103.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_17298.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_17298.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_17299.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_17299.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_17404.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_17404.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_17413.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_17413.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_1748.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_1748.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_1772.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_1772.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_1912.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_1912.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_1918.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_1918.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_1929.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_1929.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_1932.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_1932.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_1935.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_1935.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_1978.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_1978.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_2004.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_2004.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_2089.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_2089.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_2133.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_2133.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_2156.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_2156.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_2193.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_2193.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_2225.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_2225.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_2609.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_2609.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_2667.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_2667.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_2742.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_2742.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_2743.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_2743.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_2798.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_2798.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_3085.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_3085.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_4344.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_4344.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_6064.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_6064.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_6588.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_6588.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_9012.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_9012.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_9093.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_9093.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_9465.java" beforeDir="false" afterPath="$PROJECT_DIR$/Algo/src/backjoon_backup/bj_9465.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -46,15 +151,63 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Algo" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Solution" />
+      <module name="Algo" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="bj_1463_bottomUp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="backjoon_backup.bj_1463_bottomUp" />
+      <module name="Algo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="backjoon_backup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="bj_1463_topDown" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="backjoon_backup.bj_1463_topDown" />
+      <module name="Algo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="backjoon_backup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="bj_1978" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="backjoon_backup.bj_1978" />
+      <module name="Algo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="backjoon_backup.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -62,6 +215,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Solution" />
+        <item itemvalue="Application.bj_1978" />
+        <item itemvalue="Application.bj_1463_topDown" />
+        <item itemvalue="Application.bj_1463_bottomUp" />
       </list>
     </recent_temporary>
   </component>
@@ -86,23 +243,48 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1358" height="269" key="GridCell.Tab.0.bottom" timestamp="1605458156766">
-      <screen x="0" y="23" width="1792" height="1032" />
+    <state x="360" y="222" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606358375723">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="360" y="222" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/1792.40.1920.1080/0.0.1792.1120@0.0.1792.1120" timestamp="1606358375723" />
+    <state width="1054" height="271" key="GridCell.Tab.0.bottom" timestamp="1606487680524">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1358" height="269" key="GridCell.Tab.0.bottom/0.23.1792.1032@0.23.1792.1032" timestamp="1605458156766" />
-    <state width="1358" height="269" key="GridCell.Tab.0.center" timestamp="1605458156766">
-      <screen x="0" y="23" width="1792" height="1032" />
+    <state width="1054" height="271" key="GridCell.Tab.0.bottom/1792.40.1920.1080/0.0.1792.1120@0.0.1792.1120" timestamp="1606487680524" />
+    <state width="1750" height="271" key="GridCell.Tab.0.bottom/1792.63.1920.1057/0.23.1792.1042@0.23.1792.1042" timestamp="1606367237010" />
+    <state width="1054" height="271" key="GridCell.Tab.0.center" timestamp="1606487680522">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1358" height="269" key="GridCell.Tab.0.center/0.23.1792.1032@0.23.1792.1032" timestamp="1605458156766" />
-    <state width="1358" height="269" key="GridCell.Tab.0.left" timestamp="1605458156765">
-      <screen x="0" y="23" width="1792" height="1032" />
+    <state width="1054" height="271" key="GridCell.Tab.0.center/1792.40.1920.1080/0.0.1792.1120@0.0.1792.1120" timestamp="1606487680522" />
+    <state width="1750" height="271" key="GridCell.Tab.0.center/1792.63.1920.1057/0.23.1792.1042@0.23.1792.1042" timestamp="1606367237009" />
+    <state width="1054" height="271" key="GridCell.Tab.0.left" timestamp="1606487680521">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1358" height="269" key="GridCell.Tab.0.left/0.23.1792.1032@0.23.1792.1032" timestamp="1605458156765" />
-    <state width="1358" height="269" key="GridCell.Tab.0.right" timestamp="1605458156766">
-      <screen x="0" y="23" width="1792" height="1032" />
+    <state width="1054" height="271" key="GridCell.Tab.0.left/1792.40.1920.1080/0.0.1792.1120@0.0.1792.1120" timestamp="1606487680521" />
+    <state width="1750" height="271" key="GridCell.Tab.0.left/1792.63.1920.1057/0.23.1792.1042@0.23.1792.1042" timestamp="1606367237009" />
+    <state width="1054" height="271" key="GridCell.Tab.0.right" timestamp="1606487680523">
+      <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1358" height="269" key="GridCell.Tab.0.right/0.23.1792.1032@0.23.1792.1032" timestamp="1605458156766" />
+    <state width="1054" height="271" key="GridCell.Tab.0.right/1792.40.1920.1080/0.0.1792.1120@0.0.1792.1120" timestamp="1606487680523" />
+    <state width="1750" height="271" key="GridCell.Tab.0.right/1792.63.1920.1057/0.23.1792.1042@0.23.1792.1042" timestamp="1606367237010" />
+    <state x="511" y="266" key="NewModule_or_Project.wizard" timestamp="1606358348441">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="511" y="266" key="NewModule_or_Project.wizard/1792.40.1920.1080/0.0.1792.1120@0.0.1792.1120" timestamp="1606358348441" />
+    <state x="384" y="141" key="SettingsEditor" timestamp="1606358776011">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="384" y="141" key="SettingsEditor/1792.40.1920.1080/0.0.1792.1120@0.0.1792.1120" timestamp="1606358776011" />
+    <state x="264" y="172" key="new project wizard" timestamp="1606354628792">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="264" y="172" key="new project wizard/1792.40.1920.1080/0.0.1792.1120@0.0.1792.1120" timestamp="1606354628792" />
   </component>
 </project>

@@ -5,40 +5,57 @@ class Main {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
     static StringBuilder sb = new StringBuilder();
-    static int N;
-    static char[][] map;
-    static int max=0;
-    static int tempvalue=0;
     static StringTokenizer st = null;
 
     public static void main(String[] args) throws IOException {
         st = new StringTokenizer(br.readLine());
-        int T = Integer.parseInt(st.nextToken());
-        for(int t=0;t<T;t++){
+        int N = Integer.parseInt(st.nextToken());
+        st = new StringTokenizer(br.readLine());
+        int M = Integer.parseInt(st.nextToken());
+        int[] arr = new int[10];
+        String near = "";
+        if(M>0){
             st = new StringTokenizer(br.readLine());
-            int M=Integer.parseInt(st.nextToken());
-            int N=Integer.parseInt(st.nextToken());
-            int x=Integer.parseInt(st.nextToken());
-            int y=Integer.parseInt(st.nextToken());
-            int max = M*N;
-            long count=x;
-            int index=0;
+        }
+        for(int i=0;i<M;i++){
+            arr[Integer.parseInt(st.nextToken())]=-1;
+        }
 
-            if(y==N){
-                y=0;
+        if(M==100){
+            bw.write(0+"\n");
+        }else{
+            int min=Integer.MAX_VALUE;
+            String v="";
+            for(int i=0;i<=1000000;i++){
+                boolean judge = true;
+                v = i+"";
+                for(int j=0;j<v.length();j++){
+                    if(arr[v.charAt(j)-'0']==-1){
+                        judge=false;
+                        break;
+                    }
+                }
+                if(judge){
+                    if(min>Math.abs(N-Integer.parseInt(v))){
+                        min=Math.abs(N-Integer.parseInt(v));
+                        near = v;
+                    }
+                }
             }
-            while(true){
-                if((M*index+x)%N==y){
-                    bw.write(M*index+x+"\n");
-                    break;
+            int result1 = Math.abs(N-100);
+            if(near.equals("")){
+                bw.write(result1+"\n");
+            }else{
+                int result2 = near.length()+Math.abs(N-Integer.parseInt(near));
+                if(result1>result2){
+                    bw.write(result2+"\n");
+                }else{
+                    bw.write(result1+"\n");
                 }
-                if((M*index+x)>max){
-                    bw.write(-1+"\n");
-                    break;
-                }
-                index++;
             }
         }
+
+
         bw.flush();
         bw.close();
     }
