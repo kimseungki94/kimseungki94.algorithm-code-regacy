@@ -1,7 +1,9 @@
-import java.io.*;
-import java.util.*;
+package backjoon_backup;
 
-class Main {
+import java.io.*;
+import java.util.StringTokenizer;
+
+class bj_10971 {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
     static StringBuilder sb = new StringBuilder();
